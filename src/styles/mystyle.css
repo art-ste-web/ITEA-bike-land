@@ -49,23 +49,28 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 2.2rem;
+    color: #3C3C3C;
 }
 .adv-screen img {
     padding: 2.5rem;
     
 }
 .adv-screen .price {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 .adv-screen .price p {
-    text-align: right;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
+}
+.adv-screen .price p:last-child {
+    margin-bottom: 2rem;
 }
 .adv-screen .price .old-price {
     text-decoration: line-through;
+    
 }
 .adv-screen .price .new-price {
     font-weight: 700;
@@ -73,24 +78,27 @@
 }
 .adv-screen .adv-container {
     background-color: #F5CE03;
-    padding: 2rem;
+    padding-left: 3rem;
 }
 .adv-screen .adv-container ul {
     list-style-type: none;
 }
 .adv-screen .adv-container ul li {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-indent: -4rem;
     text-align: left;
-    line-height: 1rem;
-    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #3C3C3C;
+}
+.adv-screen .adv-container ul li:first-child {
+    margin-top: 1rem;
 }
 .adv-screen .adv-container ul li .marker-img {
     height: 2rem;
     width: 2rem;
 }
 .adv-screen .adv-container ul li .marker-img img {
-    padding: 0.5rem;
+    padding: 0rem;
 }
 @media (max-width: 375px) {
     .first-screen h1 {
@@ -101,7 +109,8 @@
     }
     .adv-screen .adv-container ul li {
         font-size: 1.1rem;
-        font-weight: 700;
+        margin-top: 1rem;
+        
     }
     .first-screen .cta-button {
         font-size: 1rem;
