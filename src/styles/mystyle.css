@@ -1,31 +1,115 @@
 .first-screen {
-    height: 100vh;
+    
     background-image: url(../img/backgr-img.jpg);
     background-size: cover;
     background-position: center center;
     box-shadow:  rgba(0, 0, 0, 0.5) 0 0 0 1000px inset;
-    min-width: 20em;
 }
 .first-screen h1 {
     color: #fff;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
+    
+}
+.first-screen h1:first-child {
+    margin-top: auto;
 }
 .first-screen h1 + h1 {
     font-weight: 300;
     font-style: normal;
 }
 .first-screen .cta-button {
-    height: 4rem;
-    width: 22.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
-.header {
-   height: 90%;
+
+.first-screen .header .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.first-screen .header .header-wrapper .arrow-down {
+    background: url(../img/arrow-down.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-top: auto;
     
+}
+
+.adv-screen h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.adv-screen img {
+    padding: 2.5rem;
+    
+}
+.adv-screen .price {
+    width: 60%;
+    margin: 0 auto;
+}
+.adv-screen .price p {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.adv-screen .price .old-price {
+    text-decoration: line-through;
+}
+.adv-screen .price .new-price {
+    font-weight: 700;
+    color: #28A745;
+}
+.adv-screen .adv-container {
+    background-color: #F5CE03;
+    padding: 2rem;
+}
+.adv-screen .adv-container ul {
+    list-style-type: none;
+}
+.adv-screen .adv-container ul li {
+    font-size: 2rem;
+    text-indent: -4rem;
+    text-align: left;
+    line-height: 1rem;
+    margin-top: 2rem;
+}
+.adv-screen .adv-container ul li .marker-img {
+    height: 2rem;
+    width: 2rem;
+}
+.adv-screen .adv-container ul li .marker-img img {
+    padding: 0.5rem;
+}
+@media (max-width: 375px) {
+    .first-screen h1 {
+        font-size: 2.5rem;
+    }
+    .adv-screen h2 {
+        font-size: 1.8rem;
+    }
+    .adv-screen .adv-container ul li {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .first-screen .cta-button {
+        font-size: 1rem;
+    }
+    .adv-screen .price {
+        width: 100%;
+    }
+    .adv-screen .price p {
+        font-size: 1.5rem;
+    }
 }
