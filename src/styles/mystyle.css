@@ -51,7 +51,7 @@
     font-size: 2.2rem;
     color: #3C3C3C;
 }
-.adv-screen img {
+.adv-screen .bike-img {
     padding: 2.5rem;
     
 }
@@ -78,39 +78,39 @@
 }
 .adv-screen .adv-container {
     background-color: #F5CE03;
-    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-.adv-screen .adv-container ul {
-    list-style-type: none;
-}
-.adv-screen .adv-container ul li {
-    font-size: 1.6rem;
-    text-indent: -4rem;
+.adv-screen .adv-container p {
+    font-size: 1.5rem;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: #3C3C3C;
+    display: inline-block;
 }
-.adv-screen .adv-container ul li:first-child {
-    margin-top: 1rem;
+.adv-screen .adv-container p img {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
 }
-.adv-screen .adv-container ul li .marker-img {
-    height: 2rem;
-    width: 2rem;
-}
-.adv-screen .adv-container ul li .marker-img img {
-    padding: 0rem;
-}
-@media (max-width: 375px) {
+
+@media (max-width: 600px) {
     .first-screen h1 {
         font-size: 2.5rem;
     }
     .adv-screen h2 {
         font-size: 1.8rem;
     }
-    .adv-screen .adv-container ul li {
-        font-size: 1.1rem;
+    .adv-screen .adv-container img {
+        display: block;
+        margin: 0 auto;
+    }
+    .adv-screen .adv-container p {
+        font-size: 1.2rem;
         margin-top: 1rem;
-        
+        font-weight: 700;
+        display: block;
+        text-align: center;
     }
     .first-screen .cta-button {
         font-size: 1rem;
