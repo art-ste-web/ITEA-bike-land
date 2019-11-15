@@ -7,8 +7,9 @@
     <title>Велосипеды Cannondale</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/styles/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Rubik:300,500i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/mystyle.css">
 </head>
 <body>
     <div class="container-fluid first-screen">
@@ -17,36 +18,169 @@
                 <div class="header-wrapper min-vh-100">
                     <h1>Cannondale</h1>
                     <h1>F-Si World Cup</h1>
-                    <button type="button" class="btn btn-success btn-lg cta-button">Заказать велосипед</button>
+                    <a href="#orderBlock"> <button id="ctaOrder" type="button" class="btn btn-success btn-lg cta-button">Заказать велосипед</button></a>
                     <div class="arrow-down"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid adv-screen ">
+    <div class="container-fluid adv-screen" id="adv-screen">
         <div class="row align-items-center justify-content-center">
             <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 text-center">
                 <h2>Почувствуй себя чемпионом мира с новым Cannondale!</h2>
             </div>
         </div>
         <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
                 <img class="img-fluid bike-img" src="src/img/cdale-1.jpg" alt="">
                 <div class="price">
                     <p>Новая цена: <span class="new-price">195 000 грн.</span></p>
                     <p>Старая цена: <span class="old-price">225 000 грн.</span></p>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 adv-container">
-                 <div><img class="img-fluid" src="src/img/frame.png" alt=""><p>Рама из углеродного волокна</p></div>
-                 <div><img class="img-fluid" src="src/img/fork.png" alt=""><p>Вилка Lefty нового поколения</p></div>
-                 <div><img class="img-fluid" src="src/img/comp.png" alt=""><p>Профессиональные велокомпоненты</p></div>
-                 <div><img class="img-fluid" src="src/img/weight.png" alt=""><p>Вес  велосипеда  8,63 </p></div>
-                 <div><img class="img-fluid" src="src/img/extras.png" alt=""><p>Индивидуальный дизай цвета рамы</p></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-6 adv-container">
+                 <div class="icon"><img class="img-fluid" src="src/img/frame.png" alt=""><p>Рама из углеродного волокна</p></div>
+                 <div class="icon"><img class="img-fluid" src="src/img/fork.png" alt=""><p>Вилка Lefty нового поколения</p></div>
+                 <div class="icon"><img class="img-fluid" src="src/img/comp.png" alt=""><p>Профессиональные велокомпоненты</p></div>
+                 <div class="icon"><img class="img-fluid" src="src/img/weight.png" alt=""><p>Вес  велосипеда  8,63 кг</p></div>
+                 <div class="icon"><img class="img-fluid" src="src/img/extras.png" alt=""><p>Индивидуальный дизай цвета рамы</p></div>
+            </div>
+        </div>
+        <div class="row justify-content-center specs">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8">
+                <h3 class="text-center">Подробная комплектация</h3>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th class="row">Рама</th>
+                            <td>Hi-MOD BallisTec Carbon,
+                                 SAVE, PF30A, tapered head tube, Speed Release 12mm thru axle, Ai Offset
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Вилка</th>
+                            <td>
+                                Lefty Ocho Carbon, 29", 100mm, Chamber Damper with cable lockout
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Обода</th>
+                            <td>
+                                ENVE M525 Carbon, 24h, tubeless ready
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Кассета</th>
+                            <td>
+                                 SRAM XG-1295, X01 Eagle, 10-50, 12-speed
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Тормоза</th>
+                            <td>
+                                SRAM Level Ultimate hydro disc, 160/160mm Centerline rotors
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Цепь</th>
+                            <td>
+                                SRAM X01 Eagle, 12-speed
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Руль</th>
+                            <td>
+                                Cannondale C1 Flat, Carbon, 8-degree sweep, 760mm
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row">Покрышки</th>
+                            <td>
+                                Schwalbe Racing Ray 29 x 2.25" front, Racing Ralph 2.25" rear, Snake Skin
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-    
+    <div class="container-fluid order-block" id="orderBlock">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-form ">
+              <form>
+                <h3 class="text-center">Форма заказа</h3>
+                <p>Ваше имя</p>
+                <input type="text" placeholder=" Введите имя">
+                <p>Ваш телефон</p>
+                <input type="tel" placeholder=" (0XX)123-4455">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#payModal">Заказать</button>
+                <p>
+                    После отправки данных Формы заказа с Вами свяжется менеджер и уточнит 
+                    условия оплаты и доставки.
+                </p>
+              </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+                <img class="img-fluid bike-img" src="src/img/cdale-2.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <footer class="container-fluid footer">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+               <div>Больше моделей на: <a class="link" href="#">velopulse.com.ua</a></div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="tel:+380991234567"><div><img src="src/img/phone.png" alt="">+380(99)123-4567</div></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="mailto:velop@email.com"><div><img src="src/img/email.png" alt="">velop@email.com</div></a>
+            </div>
+        </div>
+    </footer>
+      
+      <!-- Modal 1-->
+      <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Выберите способ оплаты:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div><input id="radio2" type="radio" name="pay" class="form-check-input" checked><label for="radio2" class="form-check-label"> Почка</label></div>
+              <div><input id="radio3" type="radio" name="pay" class="form-check-input"><label for="radio3" class="form-check-label"> Обмен на Deawoo Lanos c доплатой</label></div>
+              <div><input id="radio4" type="radio" name="pay" class="form-check-input"><label for="radio4" class="form-check-label"> Обмен на квартиру в Павлограде</label></div>
+              <div><input id="radio1" type="radio" name="pay" class="form-check-input"><label for="radio1" class="form-check-label">Деньги</label></div>
+            </div>
+            <div class="modal-footer">
+            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+              <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#confirmModal">Купить!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Modal 2-->
+       <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Вы уверены? А может ну его...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">С детства о нем мечтаю!</button>
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Покатаюсь пока на старом</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="src/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
