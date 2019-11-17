@@ -111,6 +111,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+.adv-screen .specs table th.row {
+    margin-left: 0;
+}
 .order-block {
     margin-top: 4rem;
 }
