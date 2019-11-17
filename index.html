@@ -18,8 +18,8 @@
                 <div class="header-wrapper min-vh-100">
                     <h1>Cannondale</h1>
                     <h1>F-Si World Cup</h1>
-                    <a href="#orderBlock"> <button id="ctaOrder" type="button" class="btn btn-success btn-lg cta-button">Заказать велосипед</button></a>
-                    <div class="arrow-down"></div>
+                    <button id="ctaOrder" type="button" data-value="order-form" class="btn btn-success btn-lg cta-button scroll-down">Заказать велосипед</button>
+                    <div class="arrow-down scroll-down" data-value="adv-screen"></div>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                  <div class="icon"><img class="img-fluid" src="src/img/fork.png" alt=""><p>Вилка Lefty нового поколения</p></div>
                  <div class="icon"><img class="img-fluid" src="src/img/comp.png" alt=""><p>Профессиональные велокомпоненты</p></div>
                  <div class="icon"><img class="img-fluid" src="src/img/weight.png" alt=""><p>Вес  велосипеда  8,63 кг</p></div>
-                 <div class="icon"><img class="img-fluid" src="src/img/extras.png" alt=""><p>Индивидуальный дизай цвета рамы</p></div>
+                 <div class="icon"><img class="img-fluid" src="src/img/extras.png" alt=""><p>Индивидуальный дизайн расцветки рамы</p></div>
             </div>
         </div>
         <div class="row justify-content-center specs">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid order-block" id="orderBlock">
+    <div class="container-fluid order-block" id="order-form">
         <div class="row justify-content-center">
             <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-form ">
               <form>
@@ -151,10 +151,10 @@
               </button>
             </div>
             <div class="modal-body">
-              <div><input id="radio2" type="radio" name="pay" class="form-check-input" checked><label for="radio2" class="form-check-label"> Почка</label></div>
+              <div><input id="radio1" type="radio" name="pay" class="form-check-input" checked><label for="radio1" class="form-check-label">Деньги</label></div>  
+              <div><input id="radio2" type="radio" name="pay" class="form-check-input" ><label for="radio2" class="form-check-label"> Почка</label></div>
               <div><input id="radio3" type="radio" name="pay" class="form-check-input"><label for="radio3" class="form-check-label"> Обмен на Deawoo Lanos c доплатой</label></div>
               <div><input id="radio4" type="radio" name="pay" class="form-check-input"><label for="radio4" class="form-check-label"> Обмен на квартиру в Павлограде</label></div>
-              <div><input id="radio1" type="radio" name="pay" class="form-check-input"><label for="radio1" class="form-check-label">Деньги</label></div>
             </div>
             <div class="modal-footer">
             <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
@@ -180,12 +180,12 @@
               </div>
             </div>
           </div>
-    <script src="src/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-    crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
     crossorigin="anonymous"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
