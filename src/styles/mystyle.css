@@ -257,4 +257,11 @@
     .footer div {
         margin-top: .8rem;
     }
+    .modal .modal-dialog .modal-body > div {
+        margin-top: 2rem;
+    }
+    .modal .modal-dialog .modal-body input[type="radio"] {
+        
+        margin-right: 1rem;
+    }
 }
