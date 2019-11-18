@@ -208,6 +208,9 @@
 .modal .modal-dialog .modal-body > div {
     margin-top: 1rem;
 }
+.modal .modal-dialog .modal-body > div:last-child {
+    margin-bottom: 1rem;
+}
 .modal .modal-dialog .modal-body input[type="radio"] {
     transform: scale(1.5);
     margin-right: .5rem;
