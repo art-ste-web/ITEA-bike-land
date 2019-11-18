@@ -260,6 +260,12 @@
     .modal .modal-dialog .modal-body > div {
         margin-top: 2rem;
     }
+    .modal .modal-dialog .modal-body > div:last-child {
+        margin-bottom: 2rem;
+    }
+    .modal .modal-dialog .modal-body label {
+        margin-left: .5rem;
+    }
     .modal .modal-dialog .modal-body input[type="radio"] {
         
         margin-right: 1rem;
