@@ -42,7 +42,7 @@
     background-size: cover;
     margin-top: auto;
     margin-bottom: 1rem;
-    
+    cursor: pointer;
 }
 
 .adv-screen h2 {
@@ -181,6 +181,7 @@
     right: 2rem;
     bottom: 1rem;
     z-index: 1000;
+    cursor: pointer;
 }
 .footer div,a, .footer div:hover, .footer a:hover {
     font-family: 'Montserrat', sans-serif;
