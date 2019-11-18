@@ -219,8 +219,7 @@
     padding: 1rem;
 }
 #confirmModal .modal-body button {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 @media (max-width: 600px) {
     .first-screen h1 {
