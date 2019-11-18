@@ -114,8 +114,10 @@
 .adv-screen .specs table th.row {
     margin-left: 0;
 }
+
 .order-block {
     margin-top: 4rem;
+   
 }
 .order-block .order-form {
     background: #F5CE03;
@@ -164,6 +166,20 @@
     background: #1C1C1C;
     padding: 2rem;
     margin-top: 3rem;
+    position: relative;
+}
+.footer .arrow-up {
+    background: url(../img/arrow-down.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    position: absolute;
+    transform: rotate(180deg);
+    right: 2rem;
+    bottom: 1rem;
+    z-index: 1000;
 }
 .footer div,a, .footer div:hover, .footer a:hover {
     font-family: 'Montserrat', sans-serif;
@@ -179,7 +195,9 @@
 .footer img {
     margin-right: 1rem;
 }
-
+.footer .email {
+    padding-right: 6rem;
+}
 
 
 
@@ -191,6 +209,7 @@
 }
 .modal .modal-dialog .modal-body input[type="radio"] {
     transform: scale(1.5);
+    margin-right: .5rem;
 }
 #confirmModal .modal-body {
     padding: 1rem;
